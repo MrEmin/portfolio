@@ -31,12 +31,14 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between '>
-            <h1 className='text-xl font-burtons'>developedbyed</h1>
+            <h1 className='text-xl font-burtons dark:text-white'>
+              developedbyed
+            </h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className='cursor-pointer text-xl'
+                  className='cursor-pointer text-xl dark:text-white'
                 />
               </li>
               <li>
@@ -53,15 +55,15 @@ export default function Home() {
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>
               Emin Code
             </h2>
-            <h3 className='text-2xl py-2 md:text-3xl'>
+            <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>
               Developer and designer.
             </h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200'>
               Freelancer providing services for programming and design content
               needs. Join me down below and let's get cracking!
             </p>
           </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-300 '>
             <AiFillTwitterCircle />
             <AiFillLinkedin />
             <AiFillYoutube />
@@ -73,8 +75,8 @@ export default function Home() {
         {/* Second Page */}
         <section>
           <div>
-            <h3 className='text-3xl py-1'>Services I offer</h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>
+            <h3 className='text-3xl py-1 dark:text-white'>Services I offer</h3>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-300'>
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className='text-teal-500'> agencies </span>
@@ -82,7 +84,7 @@ export default function Home() {
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
-            <p className='text-md py-2 leading-8 text-gray-800'>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-300'>
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
@@ -95,17 +97,36 @@ export default function Home() {
                 width={100}
                 height={100}
               />
-              <h3 className='text-lg font-medium pt-8 pb-2'>
+              <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>
                 Beautiful Designs
               </h3>
-              <p className='py-2'>
+              <p className='py-2 dark:text-white'>
                 Creating elegant designs suited for your needs following core
                 design theory.
               </p>
               <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Illustrator</p>
-              <p className='text-gray-800 py-1'>Figma</p>
+              <p className='text-gray-800 py-1 dark:text-gray-300'>Photoshop</p>
+              <p className='text-gray-800 py-1 dark:text-gray-300'>
+                Illustrator
+              </p>
+              <p className='text-gray-800 py-1 dark:text-gray-300'>Figma</p>
+            </div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image className='mx-auto' src={code} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>
+                Code your dream project
+              </h3>
+              <p className='py-2 dark:text-white'>
+                Do you have an idea for your next great website? Let's make it a
+                reality.
+              </p>
+              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
+              <p className='text-gray-800 py-1 dark:text-gray-300'>Photoshop</p>
+              <p className='text-gray-800 py-1 dark:text-gray-300'>
+                Illustrator
+              </p>
+              <p className='text-gray-800 py-1 dark:text-gray-300'>Figma</p>
+              <p className='text-gray-800 py-1 dark:text-gray-300'>Indesign</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <Image
@@ -114,38 +135,27 @@ export default function Home() {
                 width={100}
                 height={100}
               />
-              <h3 className='text-lg font-medium pt-8 pb-2'>
-                Beautiful Designs
+              <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>
+                Consulting
               </h3>
-              <p className='py-2'>
-                Creating elegant designs suited for your needs following core
-                design theory.
+              <p className='py-2 dark:text-white'>
+                Are you interested in feedback for your current project? I can
+                give you tips and tricks to level it up.
               </p>
               <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Illustrator</p>
-              <p className='text-gray-800 py-1'>Figma</p>
-            </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image className='mx-auto' src={code} width={100} height={100} />
-              <h3 className='text-lg font-medium pt-8 pb-2'>
-                Beautiful Designs
-              </h3>
-              <p className='py-2'>
-                Creating elegant designs suited for your needs following core
-                design theory.
+              <p className='text-gray-800 py-1 dark:text-gray-300'>Photoshop</p>
+              <p className='text-gray-800 py-1 dark:text-gray-300'>
+                Illustrator
               </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Illustrator</p>
-              <p className='text-gray-800 py-1'>Figma</p>
+              <p className='text-gray-800 py-1 dark:text-gray-300'>Figma</p>
+              <p className='text-gray-800 py-1 dark:text-gray-300'>Indesign</p>
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className='text-3xl py-1'>Portfolio</h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>
+            <h3 className='text-3xl py-1 dark:text-white'>Portfolio</h3>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-300'>
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className='text-teal-500'> agencies </span>
@@ -153,7 +163,7 @@ export default function Home() {
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
-            <p className='text-md py-2 leading-8 text-gray-800'>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-300'>
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
